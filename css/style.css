@@ -1,0 +1,48 @@
+*{
+  margin: 0px;
+  background-color: rgb(173, 190, 214);
+}
+
+main{
+  
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 10px 0;
+  margin: 10px;
+}
+
+#conten_title{
+  display: flex;
+  justify-content: center;
+  padding: 30px 300px 30px 300px;
+  text-align: center;
+  font-style: italic;
+  background-color: #D8E0E3;
+  
+}
+
+#img-div{
+  /*margin: 0px 50px 0px 50px;*/
+}
+
+
+img{
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+    
+}
+
+#img-caption{
+  text-align: center;
+  padding: 15px 230px 15px 230px;
+  background-color: #D8E0E3;
+  margin-top: 50px;
+  
+
+}
+
