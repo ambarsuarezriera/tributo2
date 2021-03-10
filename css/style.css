@@ -11,8 +11,6 @@ body {
 
 }
 
-
-
 .container {
   padding: 60px 0px;
   width: 90%;
@@ -114,8 +112,6 @@ header .text-header h2 {
 
 }
 
-
-
 .container-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
@@ -209,18 +205,19 @@ header .text-header h2 {
 }
 
 .card img {
-  width: 100px;
+  width: 320px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid white;
   margin: 0px 10px 0 20px;
+  
 }
 
 .card h4 {
   text-align: center;
   margin-bottom: 15px;
-  color: #A107B0;
+  color: #fadbd8;
   ;
   font-size: 19px;
 }
@@ -229,5 +226,5 @@ header .text-header h2 {
   text-align: justify;
   padding: 0px 20px 0px 10px;
   font-size: 13px;
-  color: #4F0541;
+  color:	#f2a91d;
 }
