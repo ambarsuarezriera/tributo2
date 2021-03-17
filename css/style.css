@@ -2,13 +2,11 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
 }
 
 body {
   font-family: 'Cinzel Decorative', cursive;
   font-family: 'Cormorant Infant', serif;
-
 }
 
 .container {
@@ -21,7 +19,7 @@ body {
 }
 
 .title {
-  color: 		#e37e30;
+  color: #e37e30;
   font-size: 40px;
   text-align: center;
   margin-bottom: 110px;
@@ -30,8 +28,6 @@ body {
 
 h1 {
   margin: 0px;
-
-
 }
 
 header {
@@ -40,11 +36,20 @@ header {
 
   background: #200122;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, hsla(0, 100%, 22%, 0.87), hsla(295, 94%, 7%, 0.767)), url(../img/img_ring_main.jpg);
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(0, 100%, 22%, 0.87),
+      hsla(295, 94%, 7%, 0.767)
+    ),
+    url(../img/img_ring_main.jpg);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(0, 100%, 22%, 0.671), hsla(295, 94%, 7%, 0.781)), url(../img/img_ring_main.jpg);
+  background: linear-gradient(
+      to right,
+      hsla(0, 100%, 22%, 0.671),
+      hsla(295, 94%, 7%, 0.781)
+    ),
+    url(../img/img_ring_main.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
   /*background: #3A1C71;*/
   /* fallback for old browsers */
@@ -55,34 +60,41 @@ header {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-
 }
 
 nav {
   text-align: right;
   padding: 40px 60px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-a {
+.navLink {
   color: #fadbd8;
   text-decoration: none;
   font-weight: 200;
   margin-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-a:hover {
-  color: #fadbd8;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 20px;
-  font-size: 20px;
+.navLink::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+.navLink:hover::after {
+  width: 100%;
 }
 
 .weve {
   position: absolute;
   align-items: flex-end;
   width: 100%;
-
 }
 
 header .seccion-nav {
@@ -95,42 +107,34 @@ header .seccion-nav {
 }
 
 header .text-header h1 {
-  color: #FDF2E9;
+  color: #fdf2e9;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 50px;
   font-weight: bold;
-
-
 }
 
 header .text-header h2 {
-  color: #FDF2E9;
+  color: #fdf2e9;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 30px;
   font-weight: 200;
-
-
 }
 
 .container-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 50px;
-
 }
 
 .img-sobre-nosotros {
   width: 40%;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.7);
   border-radius: 2%;
-
 }
 
 .container-textos {
   width: 40%;
   padding: 50px 0px 0px 20px;
-
-
 }
 
 .container-textos h2 {
@@ -144,8 +148,6 @@ header .text-header h2 {
   text-align: justify;
 }
 
-
-
 .portafolio {
   background-color: white;
   height: 750px;
@@ -156,8 +158,6 @@ header .text-header h2 {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
-
-
 }
 
 .imgen-port {
@@ -168,8 +168,6 @@ header .text-header h2 {
   overflow: hidden;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
   border-radius: 4%;
-
-
 }
 
 .imgen-port img {
@@ -177,11 +175,7 @@ header .text-header h2 {
   height: 250px;
   object-fit: cover;
   display: block;
-
-
 }
-
-
 
 .clientes {
   height: 500px;
@@ -194,14 +188,13 @@ header .text-header h2 {
 
 .card {
   display: flex;
-  background-color:	#9c031f;
+  background-color: #9c031f;
   height: 180px;
   width: 46%;
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-
 }
 
 .card img {
@@ -211,14 +204,12 @@ header .text-header h2 {
   border-radius: 50%;
   border: 2px solid white;
   margin: 0px 10px 0 20px;
-  
 }
 
 .card h4 {
   text-align: center;
   margin-bottom: 15px;
   color: #fadbd8;
-  ;
   font-size: 19px;
 }
 
@@ -226,5 +217,5 @@ header .text-header h2 {
   text-align: justify;
   padding: 0px 20px 0px 10px;
   font-size: 13px;
-  color:	#f2a91d;
+  color: #f2a91d;
 }
